@@ -1,0 +1,63 @@
+@media screen and (max-width: 1200px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .hideOnMobile{
+        display: none;
+    }    
+    .menuButton{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    
+
+    .sidebar{
+        width: 100%;
+    }
+    header{        
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    main{
+        /*background-color: #2f3035;*/
+        height: 400px;
+        padding: 0;
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+h1{
+    font-size: 32px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+p{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+    
+
+
+   
+}

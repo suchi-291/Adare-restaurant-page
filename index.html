@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adare Restaurant</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <header>
+        <img src="images/logo-adare-restaurant.png" alt="Logo for Adare restaurant">
+        <a href="#" onclick=showSidebar() class="menuButton"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+
+    </header>
     <div class="container">
-        <header>
-            <img src="images/logo-adare-restaurant.png" alt="Logo for Adare restaurant">
-        </header>
-        <nav>
+        
+        <nav class="sidebar">
+            <a href="#" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
             <a href="#">HOME</a>
             <a href="#">MENU</a>
             <a href="#">ORDER ONLINE</a>
             <a href="#">GIFT VOUCHER</a>
             <a href="#">CATERING</a>
-            <a href="#">CONTACT</a>
-            
+            <a href="#">CONTACT</a>            
 
         </nav>
+        <nav class="hideOnMobile">
+            <a href="#" >HOME</a>
+            <a href="#" >MENU</a>
+            <a href="#" >ORDER ONLINE</a>
+            <a href="#" >GIFT VOUCHER</a>
+            <a href="#" >CATERING</a>
+            <a href="#" >CONTACT</a>            
+        </nav>
+        
         <main>
             <h1>let's meat</h1>
             <p>We love sharing good food with great people. We bring over 30 years industry experience and passion to Adare. With a dishes that are carefully designed to bring you a truly satisfying Irish food experience that you are sure to remember. 
@@ -30,12 +43,25 @@
         </main>
           
         <section class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d77613.16837362362!2d-8.850625300847845!3d52.56216903698574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x485b460ddb875af7%3A0xdb34accde986ee58!2sAdare%2C%20Co.%20Limerick%2C%20V94%20W8WR%2C%20Ireland!3m2!1d52.5621897!2d-8.780585799999999!5e0!3m2!1sen!2sin!4v1679919298628!5m2!1sen!2sin" width="1024" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d77613.16837362362!2d-8.850625300847845!3d52.56216903698574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x485b460ddb875af7%3A0xdb34accde986ee58!2sAdare%2C%20Co.%20Limerick%2C%20V94%20W8WR%2C%20Ireland!3m2!1d52.5621897!2d-8.780585799999999!5e0!3m2!1sen!2sin!4v1679919298628!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     
         <footer>
             <p>Main St, Blackabbey, Adare, Co. Limerick - Copyright 2017©</p>
         </footer>
     </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        
+        }
+
+    </script>
 </body>
 </html>
